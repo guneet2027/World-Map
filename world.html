@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Google Visualization API Sample</title>
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load('visualization', '1', {packages: ['geochart']});
+
+    function drawVisualization() {
+      var data = google.visualization.arrayToDataTable(
+        [['Country', 'Clicks'], ['AX', 700], ['AL', 700], ['DZ', 700], ['AS', 700], ['AD', 700], ['AO', 700], ['AI', 700], ['AQ', 700], ['AG', 700], ['AR', 700], ['AM', 700], ['AW', 700], ['AU', 700], ['AT', 700], ['AZ', 700], ['BS', 700], ['BH', 700], ['BD', 700], ['BB', 700], ['BY', 700], ['BE', 700], ['BZ', 700], ['BJ', 700], ['BM', 700], ['BT', 700], ['BO', 700], ['BQ', 700], ['BA', 700], ['BW', 700], ['BV', 700], ['BR', 700], ['IO', 700], ['BN', 700], ['BG', 700], ['BF', 700], ['BI', 700], ['KH', 700], ['CM', 700], ['CA', 700], ['CV', 700], ['KY', 700], ['CF', 700], ['TD', 700], ['CL', 700], ['CN', 700], ['CX', 700], ['CC', 700], ['CO', 700], ['KM', 700], ['CG', 700], ['CD', 700], ['CK', 700], ['CR', 700], ['CI', 700], ['HR', 700], ['CU', 700], ['CW', 700], ['CY', 700], ['CZ', 700], ['DK', 700], ['DJ', 700], ['DM', 700], ['DO', 700], ['EC', 700], ['EG', 700], ['SV', 700], ['GQ', 700], ['ER', 700], ['EE', 700], ['ET', 700], ['FK', 700], ['FO', 700], ['FJ', 700], ['FI', 700], ['FR', 700], ['GF', 700], ['PF', 700], ['TF', 700], ['GA', 700], ['GM', 700], ['GE', 700], ['DE', 700], ['GH', 700], ['GI', 700], ['GR', 700], ['GL', 700], ['GD', 700], ['GP', 700], ['GU', 700], ['GT', 700], ['GG', 700], ['GN', 700], ['GW', 700], ['GY', 700], ['HT', 700], ['HM', 700], ['VA', 700], ['HN', 700], ['HK', 700], ['HU', 700], ['IS', 700], ['IN', 700], ['ID', 700], ['IR', 700], ['IQ', 700], ['IE', 700], ['IM', 700], ['IL', 700], ['IT', 700], ['JM', 700], ['JP', 700], ['JE', 700], ['JO', 700], ['KZ', 700], ['KE', 700], ['KI', 700], ['KP', 700], ['KR', 700], ['KW', 700], ['KG', 700], ['LA', 700], ['LV', 700], ['LB', 700], ['LS', 700], ['LR', 700], ['LY', 700], ['LI', 700], ['LT', 700], ['LU', 700], ['MO', 700], ['MK', 700], ['MG', 700], ['MW', 700], ['MY', 700], ['MV', 700], ['ML', 700], ['MT', 700], ['MH', 700], ['MQ', 700], ['MR', 700], ['MU', 700], ['YT', 700], ['MX', 700], ['FM', 700], ['MD', 700], ['MC', 700], ['MN', 700], ['ME', 700], ['MS', 700], ['MA', 700], ['MZ', 700], ['MM', 700], ['NA', 700], ['NR', 700], ['NP', 700], ['NL', 700], ['NC', 700], ['NZ', 700], ['NI', 700], ['NE', 700], ['NG', 700], ['NU', 700], ['NF', 700], ['MP', 700], ['NO', 700], ['OM', 700], ['PK', 700], ['PW', 700], ['PS', 700], ['PA', 700], ['PG', 700], ['PY', 700], ['PE', 700], ['PH', 700], ['PN', 700], ['PL', 700], ['PT', 700], ['PR', 700], ['QA', 700], ['RE', 700], ['RO', 700], ['RU', 700], ['RW', 700], ['BL', 700], ['SH', 700], ['KN', 700], ['LC', 700], ['MF', 700], ['PM', 700], ['VC', 700], ['WS', 700], ['SM', 700], ['ST', 700], ['SA', 700], ['SN', 700], ['RS', 700], ['SC', 700], ['SL', 700], ['SG', 700], ['SX', 700], ['SK', 700], ['SI', 700], ['SB', 700], ['SO', 700], ['ZA', 700], ['GS', 700], ['SS', 700], ['ES', 700], ['LK', 700], ['SD', 700], ['SR', 700], ['SJ', 700], ['SZ', 700], ['SE', 700], ['CH', 700], ['SY', 700], ['TW', 700], ['TJ', 700], ['TZ', 700], ['TH', 700], ['TL', 700], ['TG', 700], ['TK', 700], ['TO', 700], ['TT', 700], ['TN', 700], ['TR', 700], ['TM', 700], ['TC', 700], ['TV', 700], ['UG', 700], ['UA', 700], ['AE', 700], ['GB', 700], ['US', 700], ['UM', 700], ['UY', 700], ['UZ', 700], ['VU', 700], ['VE', 700], ['VN', 700], ['VG', 700], ['VI', 700], ['WF', 700], ['EH', 700], ['YE', 700], ['ZM', 700], ['ZW', 700]]
+
+      );
+    
+      var geochart = new google.visualization.GeoChart(
+          document.getElementById('visualization'));
+      geochart.draw(data, {width: 556, height: 347});
+    }
+    
+
+    google.setOnLoadCallback(drawVisualization);
+  </script>
+</head>
+<body style="font-family: Arial;border: 0 none;">
+<div id="visualization"></div>
+</body>
+</html>
+​
+
